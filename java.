@@ -1,0 +1,24 @@
+/* Whether number is prime or not */
+
+import java.util.scanner;
+
+class Test{
+public  static void main(String[] args){
+scanner sc = new scanner(System.in);
+int num = sc.nextInt();
+boolean isPrime = true;
+//for loop is all about nonprime
+for(int i = 2;i<num;i++){
+    //condition for non prime
+    if(num%i=0){
+        isPrime = false;
+        break;
+    }
+}
+if(isPrime){
+    System.out.println(num+"is a Prime number");
+}else{
+    System.out.println(num+"is not a prime number");
+}
+} 
+}
